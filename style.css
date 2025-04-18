@@ -1,0 +1,68 @@
+/* CSS for Responsive Web Design Example */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    flex: 1 1 300px;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .main-content {
+      justify-content: center;
+    }
+  }
+  
